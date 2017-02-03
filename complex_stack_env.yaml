@@ -1,12 +1,7 @@
-parameter_defaults:
-  # Create key before: openstack keypair create admin > ~/admin-ssh-key ; chmod 600 ~/admin-ssh-key
-  Key: admin
+  # Create key before: openstack keypair create admin > ~/admin-ssh-key ; chmod 600 ~/admin-ssh-key
+  Key: alberto
   Flavor: m1.small
   ImageName: cirros
-  ImageLocation: http://download.cirros-cloud.net/0.3.4/cirros-0.3.4-x86_64-disk.img
   PublicNetworkName: public
-  PublicGatewayIp: 10.0.0.1
-  PublicIpStart: 10.0.0.176
-  PublicIpEnd: 10.0.0.190
-  ExternalNetVlan: 100
+  PublicNetworkID: 5babee79-9e6f-440c-9501-bc90fb309b57
   DnsServers: ["8.8.8.8","8.8.4.4"]
