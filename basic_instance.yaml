@@ -1,0 +1,19 @@
+heat_template_version: 2014-10-16
+description: A simple server.
+parameters:
+  metadata:
+    type: json
+
+resources:
+  server:
+    type: OS::Nova::Server
+    properties:
+      flavor: m1.tiny
+      image: cirros
+      metadata: {get_param: metadata}
+      networks:
+        - network: test1
+      user_data_format: RAW
+      user_data: |
+        #!/bin/sh
+        while [ 1 ] ; do echo $((13**99)) 1>/dev/null 2>&1; done
