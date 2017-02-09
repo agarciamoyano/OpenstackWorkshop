@@ -1,3 +1,4 @@
+parameter_defaults:  
   # Create key before: openstack keypair create admin > ~/admin-ssh-key ; chmod 600 ~/admin-ssh-key
   Key: alberto
   Flavor: m1.small
