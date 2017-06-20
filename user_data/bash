@@ -1,0 +1,3 @@
+#!/bin/bash
+touch /home/cloud-user/cloudinit.txt
+echo "I was here, Alberto" > /home/cloud-user/cloudinit.txt
