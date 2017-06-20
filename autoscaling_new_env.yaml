@@ -1,0 +1,5 @@
+parameter_defaults:
+  image: cirros
+  key: director_key
+  flavor: m1.small
+  network: private-net
